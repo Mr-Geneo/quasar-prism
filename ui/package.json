@@ -27,6 +27,7 @@
     "@quasar/app": "^3.0.0",
     "@quasar/extras": "^1.0.0",
     "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-json": "^4.0.0",
     "@rollup/plugin-node-resolve": "^11.2.1",
     "@rollup/plugin-replace": "^2.4.2",
@@ -54,5 +55,8 @@
     "last 4 ChromeAndroid versions",
     "last 4 FirefoxAndroid versions",
     "last 4 iOS versions"
-  ]
+  ],
+  "dependencies": {
+    "prismjs": "^1.25.0"
+  }
 }

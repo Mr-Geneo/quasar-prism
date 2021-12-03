@@ -2,11 +2,7 @@
   <q-page padding class="row justify-center">
     <q-list dense class="list">
       <div class="text-h4 q-mb-md">Test pages</div>
-      <q-item
-        v-for="page in pages"
-        :key="page.path"
-        :to="page.path"
-      >
+      <q-item v-for="page in pages" :key="page.path" :to="page.path">
         <q-item-section avatar>
           <q-icon name="pages" />
         </q-item-section>
@@ -25,11 +21,11 @@
 import pages from '../router/pages'
 
 export default {
-  setup () {
+  setup() {
     return {
-      pages
+      pages,
     }
-  }
+  },
 }
 </script>
 

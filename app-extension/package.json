@@ -12,7 +12,7 @@
   "bugs": "https://github.com/Mr-Geneo/quasar-prism/issues",
   "homepage": "https://github.com/Mr-Geneo/quasar-prism.git",
   "dependencies": {
-    "quasar-ui-prism": "latest"
+    "quasar-ui-prism": "^1.0.0"
   },
   "engines": {
     "node": ">= 8.9.0",

@@ -8,13 +8,9 @@ module.exports = function (ctx) {
   return {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
-    boot: [
-      'register.js'
-    ],
+    boot: ['register.js'],
 
-    css: [
-      'app.sass'
-    ],
+    css: ['app.sass'],
 
     extras: [
       // 'ionicons-v4',
@@ -26,7 +22,7 @@ module.exports = function (ctx) {
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
       'roboto-font', // optional, you are not bound to it
-      'material-icons' // optional, you are not bound to it
+      'material-icons', // optional, you are not bound to it
     ],
 
     framework: {
@@ -36,7 +32,7 @@ module.exports = function (ctx) {
       config: {},
 
       // Quasar plugins
-      plugins: []
+      plugins: [],
     },
 
     // animations: 'all', // --- includes all animations
@@ -46,28 +42,29 @@ module.exports = function (ctx) {
     build: {
       vueRouterMode: 'history',
 
-      chainWebpack (chain) {
+      chainWebpack(chain) {
         chain.resolve.alias.merge({
-          ui: path.resolve(__dirname, `../src/index.esm.js`)
+          ui: path.resolve(__dirname, `../src/index.esm.js`),
         })
 
-        chain.plugin('define-ui')
-          .use(webpack.DefinePlugin, [{
-            __UI_VERSION__: `'${require('../package.json').version}'`
-          }])
-      }
+        chain.plugin('define-ui').use(webpack.DefinePlugin, [
+          {
+            __UI_VERSION__: `'${require('../package.json').version}'`,
+          },
+        ])
+      },
     },
 
     devServer: {
       // port: 8080,
-      open: true // opens browser window automatically
+      open: true, // opens browser window automatically
     },
 
     ssr: {
       middlewares: [
         ctx.prod ? 'compression' : '',
-        'render' // keep this as last one
-      ]
-    }
+        'render', // keep this as last one
+      ],
+    },
   }
 }

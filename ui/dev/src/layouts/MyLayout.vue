@@ -2,17 +2,9 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          to="/"
-          icon="home"
-        />
+        <q-btn flat dense round to="/" icon="home" />
 
-        <q-toolbar-title>
-          quasar-ui-prism v{{ version }}
-        </q-toolbar-title>
+        <q-toolbar-title> quasar-ui-prism v{{ version }} </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
@@ -30,10 +22,10 @@ import { version } from 'ui' // "ui" is aliased in quasar.conf.js
 export default {
   name: 'MyLayout',
 
-  setup () {
+  setup() {
     return {
-      version
+      version,
     }
-  }
+  },
 }
 </script>

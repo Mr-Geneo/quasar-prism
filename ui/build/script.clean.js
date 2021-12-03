@@ -1,5 +1,4 @@
-var
-  rimraf = require('rimraf'),
+var rimraf = require('rimraf'),
   path = require('path')
 
 rimraf.sync(path.resolve(__dirname, '../dist/*'))

@@ -1,8 +1,7 @@
-const
-  fs = require('fs'),
+const fs = require('fs'),
   path = require('path'),
   root = path.resolve(__dirname, '../..'),
-  resolvePath = file => path.resolve(root, file),
+  resolvePath = (file) => path.resolve(root, file),
   { blue } = require('chalk')
 
 const writeJson = function (file, json) {
