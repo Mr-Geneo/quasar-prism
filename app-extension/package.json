@@ -1,0 +1,22 @@
+{
+  "name": "quasar-app-extension-prism",
+  "version": "1.0.0",
+  "description": "Quasar Plus Component use PrismJS",
+  "author": "wanggenyou <wanggenyou@foxmail.com>",
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mr-Geneo/quasar-prism.git"
+  },
+  "bugs": "https://github.com/Mr-Geneo/quasar-prism/issues",
+  "homepage": "https://github.com/Mr-Geneo/quasar-prism.git",
+  "dependencies": {
+    "quasar-ui-prism": "latest"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  }
+}
